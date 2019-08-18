@@ -1,0 +1,1 @@
+L.mapbox.accessToken = 'pk.eyJ1Ijoib3NjYXJvc2Nhcm9zY2Fyb3NjYXIiLCJhIjoiY2pscXp1NHM4MDFkODN3cXJ1NHJuY293MiJ9.MNHB5b1jTBewBGnlgcj1tQ';

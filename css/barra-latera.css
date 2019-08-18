@@ -1,0 +1,85 @@
+.barra-lateral{
+    position: fixed;
+    background: white;
+    width: 80vw;
+    top: 0;
+    left: -80vw;
+    z-index: 2000;
+    height: 100vh;
+    transition: .3s;
+    display: grid;
+    grid-template-rows: 25% 65% 10%;
+}
+.barra-lateral.active{
+    left: 0;
+}
+.overlay-lat{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1997;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: 0;
+}
+.overlay-lat.active{
+    visibility: visible;
+    opacity: 1;
+}
+.item:nth-of-type(1){
+    background: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:nth-of-type(3){
+    background: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.usuario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.usuario p{
+    color: white;
+}
+.foto-usuario{
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.container-foto-usuario{
+    margin: 0;
+    padding: 30px;
+}
+.datos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nombre{
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Tusu{
+    margin: 0;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.derechos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 5px;
+}
+.version{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-right: 5px;
+}

@@ -1,0 +1,65 @@
+.nav{
+    height: 9vh;
+    background: #343a40;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1999;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+}
+.tituloNav{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.imgMeca{
+    width: 13%;
+    margin-right: 10px;
+}
+.containerMeca{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    height: 95%;
+    margin-left: 5px;
+    float: right;
+}
+.burguer-button{
+    border: none;
+    padding: 10px;
+    position: fixed;
+    z-index: 2000;
+    background: #343a40;
+    border: 1px solid rgb(160, 160, 160);
+    top: 5px;
+    left: 5px;
+    will-change: transform;
+    transition: .3s;
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.burguer-button:active{
+    transform: scale(.9);
+
+}
+
+@keyframes burguer {
+    0%{
+        transform: rotate(0)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.icon-menu{
+    font-size: 20px;
+}
+

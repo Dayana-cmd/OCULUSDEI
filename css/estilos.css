@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 37px;
+}
+
+.ui-control {
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 3px;
+}
+.ui-control {
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 3px;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2000;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: 0;
+}
+.overlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+.modal{
+    width: 90vw;
+    height: 80vh;
+    background: floralwhite;
+    border-radius: 10px;
+    /* box-shadow: inset 0px -.2em 5px rgba(0, 0, 0, .8); */
+    position: absolute;
+    z-index: 4000;
+    left: 15px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 6px;
+    transform: translateY(-3000px);
+    /* animation: modalIn .8s ease-in-out forwards; */
+}
+@keyframes modalIn{
+    0%{
+        transform: translateY(-3000px);
+    }
+    60%{
+        
+        transform: translateY(10px);
+    }
+    
+    70%{
+        
+        transform: translateY(-10px);
+    }
+    
+   
+    90%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes moresultadosdalOut{
+    0%{
+        transform: translateY(0);
+    }
+    60%{
+        
+        transform: translateY(25px);
+    }
+    
+    100%{
+        transform: translateY(-3000px);
+    }
+}
+.tituloModal{
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.btn{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px -.2em rgba(0, 0, 0, .8);
+    will-change: transform;
+    transition: .2s;
+    outline: 0;
+}
+.btn:active{
+    transform: scale(.9);
+}
+.btn.guardar{
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+.btn.cancelar{
+    background: #ffc107;
+    color: black;
+    font-weight: bold;
+}
+.btn.comollegar{
+    background: #105cb4;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-text{
+    border: 1px solid rgba(160, 160, 160, 0.8);
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: 0;
+}
+.form-text:focus{
+    border-bottom: 2px solid rgba(118, 228, 71, 0.6)
+}
+.like{
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+}
+@keyframes like {
+    0%{
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(.6);
+    }
+    30%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(.9);
+        
+    }
+    40%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+
+    }
+    50%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    60%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    70%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(.8);
+    }
+    
+    80%{
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(.8);
+    }
+}
+
+.filter-ui {
+    background:lightyellow;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    z-index:1800;
+    padding:10px;
+    border-radius:3px;
+    box-shadow: inset 0px -0.2em 11px rgba(0,0,0,.8);
+
+}
+label{
+    border-bottom: 2px solid rgb(248, 248, 248);
+    border-bottom-right-radius: 5px;
+}
+.resultados{
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, .6);
+}
+.estre{
+    width: 10px;
+}
+.nombreTaller{
+    color: #28a745;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.boton-popup{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.descrip{
+    display: block;
+    text-align: left;
+    margin: 0;
+
+}
+.tipo{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#directions {
+    position: absolute;
+    width: 33.3333%;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+#inputs {
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+}
+
+#directions {
+    z-index: 99;
+    background: rgba(0,0,0,.8);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+#errors {
+    z-index: 8;
+    opacity: 0;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    background: rgba(0,0,0,.25);
+    top: 90px;
+    left: 10px;
+}
